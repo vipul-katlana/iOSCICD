@@ -2,10 +2,6 @@
 name: Develop - Run iOS Tests
 
 on:
-  push:
-    branches:
-      - develop
-      
   pull_request:
     branches:
       - develop
