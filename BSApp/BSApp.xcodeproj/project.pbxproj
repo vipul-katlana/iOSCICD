@@ -12,7 +12,18 @@
 		9254039F3084D8FE00E408DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9254039D3084D8FE00E408DB /* Main.storyboard */; };
 		925403A13084D90000E408DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925403A03084D90000E408DB /* Assets.xcassets */; };
 		925403A43084D90000E408DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925403A23084D90000E408DB /* LaunchScreen.storyboard */; };
+		92594E573084F258000F2076 /* BSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92594E563084F258000F2076 /* BSAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92594E583084F258000F2076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9254038C3084D8FD00E408DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 925403933084D8FE00E408DB;
+			remoteInfo = BSApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		925403943084D8FE00E408DB /* BSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,19 @@
 		925403A03084D90000E408DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925403A33084D90000E408DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		925403A53084D90000E408DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92594E543084F258000F2076 /* BSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92594E563084F258000F2076 /* BSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		925403913084D8FE00E408DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92594E513084F258000F2076 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				925403963084D8FE00E408DB /* BSApp */,
+				92594E553084F258000F2076 /* BSAppTests */,
 				925403953084D8FE00E408DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				925403943084D8FE00E408DB /* BSApp.app */,
+				92594E543084F258000F2076 /* BSAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +84,14 @@
 				925403A53084D90000E408DB /* Info.plist */,
 			);
 			path = BSApp;
+			sourceTree = "<group>";
+		};
+		92594E553084F258000F2076 /* BSAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				92594E563084F258000F2076 /* BSAppTests.swift */,
+			);
+			path = BSAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +114,24 @@
 			productReference = 925403943084D8FE00E408DB /* BSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		92594E533084F258000F2076 /* BSAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92594E5C3084F258000F2076 /* Build configuration list for PBXNativeTarget "BSAppTests" */;
+			buildPhases = (
+				92594E503084F258000F2076 /* Sources */,
+				92594E513084F258000F2076 /* Frameworks */,
+				92594E523084F258000F2076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92594E593084F258000F2076 /* PBXTargetDependency */,
+			);
+			name = BSAppTests;
+			productName = BSAppTests;
+			productReference = 92594E543084F258000F2076 /* BSAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +144,10 @@
 				TargetAttributes = {
 					925403933084D8FE00E408DB = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					92594E533084F258000F2076 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 925403933084D8FE00E408DB;
 					};
 				};
 			};
@@ -113,6 +165,7 @@
 			projectRoot = "";
 			targets = (
 				925403933084D8FE00E408DB /* BSApp */,
+				92594E533084F258000F2076 /* BSAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +181,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92594E523084F258000F2076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +200,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92594E503084F258000F2076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92594E573084F258000F2076 /* BSAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92594E593084F258000F2076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 925403933084D8FE00E408DB /* BSApp */;
+			targetProxy = 92594E583084F258000F2076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9254039D3084D8FE00E408DB /* Main.storyboard */ = {
@@ -343,6 +419,40 @@
 			};
 			name = Release;
 		};
+		92594E5A3084F258000F2076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dukanduniya.app.BSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BSApp";
+			};
+			name = Debug;
+		};
+		92594E5B3084F258000F2076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dukanduniya.app.BSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BSApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,6 +470,15 @@
 			buildConfigurations = (
 				925403A93084D90000E408DB /* Debug */,
 				925403AA3084D90000E408DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92594E5C3084F258000F2076 /* Build configuration list for PBXNativeTarget "BSAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92594E5A3084F258000F2076 /* Debug */,
+				92594E5B3084F258000F2076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
