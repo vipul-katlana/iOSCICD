@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     func textCode() -> String? {
-        return "value"
+        return "value new"
     }
 
 }
