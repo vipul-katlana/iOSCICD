@@ -25,7 +25,7 @@ jobs:
       - name: Show Xcode version
         run: xcodebuild -version
 
-       - name: Run unit tests
+      - name: Run unit tests
         run: |
           set -o pipefail
           xcodebuild test \
