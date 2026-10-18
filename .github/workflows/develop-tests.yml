@@ -25,11 +25,11 @@ jobs:
       - name: Show Xcode version
         run: xcodebuild -version
 
-      - name: Run unit tests
+       - name: Run unit tests
         run: |
           set -o pipefail
           xcodebuild test \
             -project "BSApp/BSApp.xcodeproj" \
             -scheme "BSApp" \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.2' \
             -resultBundlePath "$RUNNER_TEMP/DevelopTests.xcresult"
