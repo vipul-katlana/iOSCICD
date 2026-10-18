@@ -5,6 +5,16 @@ on:
   push:
     branches:
       - develop
+      
+  pull_request:
+    branches:
+      - develop
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
   workflow_dispatch:
 
 permissions:
