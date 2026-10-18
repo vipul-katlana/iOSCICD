@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     func textCode() -> String? {
-        return "value new option new feature pull request new test one test more new rule new upate rules"
+        return "value new option new feature pull request new test one test more new rule new upate rules new change"
     }
 
 }
