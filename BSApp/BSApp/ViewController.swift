@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     func textCode() -> String? {
-        return "Update code"
+        return "Update new code"
     }
 
 }
